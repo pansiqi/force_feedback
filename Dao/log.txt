@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "src\pymssql.pyx", line 448, in pymssql.Cursor.execute
+  File "src\_mssql.pyx", line 1064, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1095, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1228, in _mssql.MSSQLConnection.format_and_run_query
+  File "src\_mssql.pyx", line 1639, in _mssql.check_cancel_and_raise
+  File "src\_mssql.pyx", line 1683, in _mssql.maybe_raise_MSSQLDatabaseException
+_mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:/python/pyserver/Dao/Dao.py", line 30, in insertTable
+    curor.execute(sql)
+  File "src\pymssql.pyx", line 465, in pymssql.Cursor.execute
+pymssql.ProgrammingError: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+Traceback (most recent call last):
+  File "src\pymssql.pyx", line 448, in pymssql.Cursor.execute
+  File "src\_mssql.pyx", line 1064, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1095, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1228, in _mssql.MSSQLConnection.format_and_run_query
+  File "src\_mssql.pyx", line 1639, in _mssql.check_cancel_and_raise
+  File "src\_mssql.pyx", line 1683, in _mssql.maybe_raise_MSSQLDatabaseException
+_mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:/python/pyserver/Dao/Dao.py", line 30, in insertTable
+    cursor.execute(sql)
+  File "src\pymssql.pyx", line 465, in pymssql.Cursor.execute
+pymssql.ProgrammingError: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+Traceback (most recent call last):
+  File "src\pymssql.pyx", line 448, in pymssql.Cursor.execute
+  File "src\_mssql.pyx", line 1064, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1095, in _mssql.MSSQLConnection.execute_query
+  File "src\_mssql.pyx", line 1228, in _mssql.MSSQLConnection.format_and_run_query
+  File "src\_mssql.pyx", line 1639, in _mssql.check_cancel_and_raise
+  File "src\_mssql.pyx", line 1683, in _mssql.maybe_raise_MSSQLDatabaseException
+_mssql.MSSQLDatabaseException: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:/python/pyserver/Dao/Dao.py", line 30, in insertTable
+    cursor.execute(sql)
+  File "src\pymssql.pyx", line 465, in pymssql.Cursor.execute
+pymssql.ProgrammingError: (102, b"Incorrect syntax near '3'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
