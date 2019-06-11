@@ -1,11 +1,8 @@
 from Server.server.force_server import WlwServer
-ip = "192.168.31.193"
+ip = "192.168.43.50"
 port = 7000
 list = 50  # 最大连接数
 from Deal_data.deal_data import filename
-from DBSCAN.cluster_opencv import DBSCAN
-from Image_analysis.opencv_user import python_call_cc
-from Pycnn.precast import precast
 
 def main():
     # 创建一个web服务器

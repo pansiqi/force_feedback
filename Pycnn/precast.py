@@ -22,8 +22,8 @@ def precast(filepath):
         data1 = read_one_image(filepath)
         data.append(data1)
 
-        saver = tf.train.import_meta_graph('model\\model.ckpt.meta')
-        saver.restore(sess, tf.train.latest_checkpoint('model\\'))
+        saver = tf.train.import_meta_graph('F://code//force_feedback//Pycnn//model//model.ckpt.meta')
+        saver.restore(sess, tf.train.latest_checkpoint('F:/code/force_feedback/Pycnn/model/'))
 
         graph = tf.get_default_graph()
         x = graph.get_tensor_by_name("x:0")
@@ -38,5 +38,3 @@ def precast(filepath):
         # 打印出预测矩阵每一行最大值的索引
         output = tf.argmax(classification_result, 1).eval()
         print(force_type[output[0]])
-
-precast(testpath1)

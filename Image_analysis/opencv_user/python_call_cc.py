@@ -17,7 +17,7 @@ def opencv_call_cc_process(filename, rho = 1, theta = math.pi/180, minLinLength 
     :param maxLineGap:线段上最近两点之间的阈值
     :param area_scale:力的检测范围
     """
-    dll = cdll.LoadLibrary("opencv_call_cpp.dll")
+    dll = cdll.LoadLibrary("F:\\code\\force_feedback\\Image_analysis\\opencv_user\\opencv_call_cpp.dll")
     #  动态导入dll文件
     func = dll.opencv_process
     func.argtypes = (POINTER(c_char), c_int, c_double, c_int, c_int, c_int)
@@ -37,6 +37,6 @@ def opencv_call_cc_process(filename, rho = 1, theta = math.pi/180, minLinLength 
     print(area)
     print("the mean angle is:{}".format(angle_mean))
 
-opencv_call_cc_process("..//force_feedback//DATA//img//test//1.png")
+# opencv_call_cc_process("..//force_feedback//DATA//img//test//1.png")
 
 

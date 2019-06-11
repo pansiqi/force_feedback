@@ -38,7 +38,7 @@ def test_data_write():
     print(datas.shape)
     print(datas)
     return datas
-wirite_data_to_img(test_data_write(),shape=(16,16))
+# wirite_data_to_img(test_data_write(),shape=(16,16))
 # path = "..//img//test//3.png"
 # test_file_path = "..//img//1.jpeg"
 # # RGB---->灰度图
